@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$softBlue : hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$darkBlue: hsl(217, 54%, 11%);
+$darkBlueCard: hsl(216, 50%, 16%);
+$darkBlueLine: hsl(215, 32%, 27%);
+$paragraph: 1.125rem;
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: $darkBlue;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.component {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+
+  display :flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 1.5rem;
+  background-color: $darkBlueCard;
+  padding: 2rem;
+  box-shadow: 0 0 1px $darkBlue;
+
+  &__image {
+    border-radius: 0.625rem;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: $paragraph;
+    color: $softBlue;
+  }
+
+  &__status {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.063rem solid $darkBlueLine;
+  }
+
+  &__value {
+    display: flex;
+    color: $cyan;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+
+  &__days {
+    display: flex;
+    color: $softBlue;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile {
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+    margin-right: 1rem;
+    transform: scale(0.3);
+
+    &__text {
+      color: $softBlue;
+    }
+
+    &__author {
+      color: #fff;
+    }
+  }
+
+}

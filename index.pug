@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Frontend Mentor | NFT preview card component
+    link(rel="stylesheet", href="./style.css")
+  body 
+    .component 
+      .card 
+        img.card__image(src="./images/image-equilibrium.jpg" alt="image")
+        h1.card__title Equilibrium #3429
+        p.card__subtitle Our Equilibrium collection promotes balance and calm.
+        .card__status 
+          .card__value 
+            img.card__icon(src="./images/icon-ethereum.svg")
+            p 0.041 ETH
+          .card__days 
+            img.card__icon(src="./images/icon-clock.svg")
+            p 3 days left
+        .card__footer 
+          img.card__profile(src="./images/image-avatar.png", alt="avatar")
+          p.card__profile__text Creation of 
+          p.card__profile__author Jules Wyvern
